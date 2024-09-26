@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .navbar {
+        box-sizing: border-box;
+        background-color: white;
+        display: flex;
+        align-content: center;
+        width: 100vw;
+        height: 15vh;
+      }
+
+      .navbar h1 {
+        position: relative;
+        color: rgb(98, 96, 96);
+        left: 350px;
+        top: 30px;
+      }
+
+      .logo {
+        background-color: rgb(9, 102, 102);
+        width: 150px;
+        height: 15vh;
+        position: relative;
+        float: left;
+        left: 130px;
+      }
+
+      .heading {
+        background-color: rgb(9, 102, 102);
+        width: 100vw;
+        height: 15vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+
+      .box {
+        margin: 0px;
+        padding: 0px;
+        background-color: rgb(15, 128, 128);
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+        width: 100vw;
+        height: 60vh;
+        box-sizing: border-box;
+      }
+
+      form {
+        margin: 20px;
+        padding: 20px;
+        color: white;
+        font-size: x-large;
+      }
+
+      input {
+        margin: 10px;
+        padding: 5px;
+      }
+
+      select {
+        margin: 10px;
+        padding: 5px;
+      }
+
+      button {
+        margin: 10px;
+        padding: 10px;
+      }
+      .footer {
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        background-color: rgb(9, 102, 102);
+        justify-content: space-around;
+        width: 100vw;
+        height: 25vh;
+        align-items: center;
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <img src="./images/logo.jpg" alt="" class="logo" />
+      <h1>Doctor Appointment Booking</h1>
+    </div>
+    <div class="heading">
+      <h1>Appointment Booking</h1>
+    </div>
+    <div class="box">
+      <form action="/bookAppointment" method="post">
+        <label for="doctor">Choose a Doctor:</label>
+        <select name="doctor" id="doctor">
+          <option value="1">Dr. Milind Deshmukh</option>
+          <option value="2">Dr. Pratik Patil</option>
+          <option value="3">Dr. Riya Pawar</option>
+          <option value="4">Dr. Nilima Jadhav</option>
+          <option value="5">Dr. Sharad Shinde</option>
+          <option value="6">Dr. Makarand Patel</option>
+          <!-- Add more doctors here -->
+        </select>
+        <br />
+        <label for="time">Choose Appointment Time:</label>
+        <input type="datetime-local" id="time" name="time" />
+        <br />
+        <label for="patient">Your Name:</label>
+        <input type="text" id="patient" name="patient" />
+        <br />
+        <button type="submit">Book Appointment</button>
+      </form>
+
+      <div id="confirmation"></div>
+    </div>
+    <div class="footer">
+      <div class="text">
+        <h3>About Us</h3>
+        <p>24 Hour's</p>
+        <p>Top Doctors</p>
+        <p>Best Care</p>
+        <p>Patient</p>
+      </div>
+      <div class="text">
+        <h3>Speciality</h3>
+        <p>Spin Surgery</p>
+        <p>Knee Surgery</p>
+        <p>Leg Surgery</p>
+        <p>Tendon Surgery</p>
+      </div>
+      <div class="text">
+        <h3>Best Teams</h3>
+        <p>Doctor</p>
+        <p>Nursing</p>
+        <p>Staff</p>
+        <p>Hospital</p>
+      </div>
+      <div class="text">
+        <h3>Address</h3>
+        <p>Near MG Road</p>
+        <p>Galaxy Care</p>
+        <p>333-00222</p>
+        <p>2222-4334</p>
+      </div>
+    </div>
+  </body>
+</html>

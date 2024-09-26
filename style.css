@@ -1,0 +1,522 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    background-color: #e6e6e6;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure navbar is on top of other content */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #0b4e4e;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  ul {
+    display: flex;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    margin-inline: 20px;
+    color: white;
+  }
+  
+  ul li a:hover {
+    color: black;
+    border-bottom: 2px solid black;
+  }
+  
+  .logo {
+    font-size: 22px;
+  }
+  
+  .main { 
+    background-image: url('./young-handsome-physician-medical-robe-with-stethoscope.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(16, 106, 106);
+    color: white;
+    height: 640px;
+  }
+  
+  .mainText h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-left: 20px;
+  }
+  
+  .mainText p {
+    margin-left: 20px;
+    font-size: 25px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .mainText button {
+    width: 140px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 22px;
+    margin-right: 30px; /* Adjusted margin */
+    margin-left: 125px;
+  }
+  
+  .mainText button:first-child {
+    margin-left: 120px; /* Increased margin to push the first button further right */
+  }
+  
+  .mainText button:last-child {
+    margin-left: 10px; /* Margin for the second button remains the same */
+  }
+  
+  .mainText button:hover {
+    border: 2px solid black;
+    background-color: transparent;
+  }
+  
+  .teams {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .teams.card {
+    width: 270px;
+    height: 420px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-inline: 20px;
+    margin-top: 22px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 330px;
+    border-radius: 5px;
+  }
+  
+  .card p {
+    margin-top: 11px;
+    margin-left: 11px;
+  }
+  
+  .head {
+    text-align: center;
+    padding: 80px;
+  }
+  
+  .speciality {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #e4e1e1;
+      }
+      #doctor{
+background-color: aliceblue;
+      }
+  .section{
+        height: 800px; /* Adjust the height as needed */
+        padding: 20px;
+      }
+  
+  .speciality.spCard {
+    width: 300px;
+    padding: 22px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 22px;
+    margin-inline: 20px;
+  }
+  
+  .spCard img {
+    width: 200px;
+  }
+  
+  .spCard p {
+    margin-top: 11px;
+  }
+  
+  .reviews {
+    width: 800px;
+    height: 400px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .patientReview {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* background-color: #fff; */
+    transition: all 1s ease;
+  }
+  
+  .teams{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.teams .card{
+    width: 350px;
+    height: 390px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-inline: 20px;
+    margin-top: 22px;
+}
+.card img{
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+}
+.card p{
+    margin-top: 11px;
+    margin-left: 11px;
+}
+.head{
+    text-align: center;
+    padding: 80px;
+}
+.speciality .spCard{
+    width: 300px;
+    padding: 22px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 22px;
+
+    margin-inline: 20px;
+}
+.spCard img{
+    width: 200px;
+}
+.spCard p{
+    margin-top: 11px;
+}
+  .patientReview img {
+    width: 300px;
+    margin-inline: 18px;
+    border-radius: 4px;
+  }
+  
+  .contact {
+    width: 300px;
+    background-color: #fff;
+    padding: 22px;
+    border-radius: 4px;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .contact input {
+    width: 90%;
+    font-size: 18px;
+    padding: 9px;
+    margin-top: 22px;
+    border: none;
+    outline: none;
+    background-color: #e4e1e1;
+    border-radius: 2px;
+  }
+  
+  .contact button {
+    width: 100px;
+    height: 30px;
+    background-color: rgb(13, 98, 98);
+    color: white;
+    font-size: 17px;
+    border: none;
+    margin-top: 22px;
+  }
+  
+  .contact h1 {
+    color: rgb(16, 103, 103);
+  }
+  .one {
+    position: absolute;
+    bottom: 0;
+    left: 20px; /* Adjusted left position */
+    width: 400px;
+    height: 140px;
+    margin-bottom: 80px; /* Adjusted margin-bottom */
+    padding: 20px; /* Add padding for content */
+}
+
+.one h1 {
+    font-size: 38px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.one p {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px; /* Adjusted margin-bottom */
+}
+
+.one button {
+    width: 90px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px; /* Adjusted margin-top */
+    margin-bottom: 10px; /* Adjusted margin-bottom */
+    margin-right: 10px; /* Adjusted margin-right */
+}
+
+/* Adjust styles for speciality section */
+#speciality {
+    height: auto;
+    position: relative;
+    background-image: url('./Stethoscope.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 800px; /* Increase the height */
+    display: flex;
+    align-items: flex-end; /* Align items to bottom */
+    justify-content: flex-start; /* Align items to left */
+}
+#chatbot {
+    .section1 {
+        height: 800px; /* Set the height */
+        display: flex;
+        align-items: flex-end; /* Align items to bottom */
+        justify-content: flex-start; /* Align items to left */
+        position: relative;
+        width: 100%;
+        background-color: white;
+    }
+    
+    .right-half {
+        width: 50%; /* Set width to half of the section */
+        background-image: url('./aichatbot.jpg'); /* Set background image */
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100%; /* Make it cover the full height */
+    }
+    
+    .left-half {
+        width: 50%; /* Set width to half of the section */
+    height: 100%; /* Make it cover the full height */
+    background-color: white; /* Set background color to white */
+    display: flex;
+    justify-content: center; /* Center align content horizontally */
+    align-items: center; /* Center align content vertically */
+        width: 50%; /* Set width to half of the section */
+        height: 100%; /* Make it cover the full height */
+        background-color: white; /* Set background color to white */
+    }
+    .text-container{
+        display: flex;
+    flex-direction: column;
+    align-items: center; /* Align items horizontally at center */
+    text-align: center; /* Align text content at center */
+    }
+    .text-container h1 {
+        font-weight: bold; /* Make text bold */
+    }
+    .text-container h1 {
+        font-weight: bold; /* Make text bold */
+        margin: 0; /* Remove default margin */
+        font-size: 38px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .text-container h2 {
+        font-weight: bold; /* Make text bold */
+        margin-top: 5px;
+        font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px; /* Adjusted margin-bottom */
+    }
+    .text-container button {
+        width: 170px;
+        height: 40px;
+        background-color: black;
+        color: white;
+        font-size: 20px;
+        border: none;
+        border-radius: 10px;
+        margin-top: 22px;
+      }
+    
+    
+}
+#patient {
+    .section2 {
+        height: 800px; /* Set the height */
+        display: flex;
+        align-items: flex-end; /* Align items to bottom */
+        justify-content: flex-start; /* Align items to left */
+        position: relative;
+        width: 100%;
+        background-color: white;
+    }
+    
+    .right-half {
+        width: 50%; /* Set width to half of the section */
+        background-image: url('./give\ me\ a\ pictu\ e0f2e74f-d818-4dc7-87c9-65db1d7aca7e.png'); /* Set background image */
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100%; /* Make it cover the full height */
+
+    }
+    @media (min-width: 768px) {
+        .right-half {
+            height: 800px; /* Set the height of the image */
+            width: 800px;
+        }
+    }
+    .left-half {
+        width: 50%; /* Set width to half of the section */
+    height: 100%; /* Make it cover the full height */
+    background-color:  rgb(16, 103, 103);
+    ; /* Set background color to white */
+    display: flex;
+    justify-content: center; /* Center align content horizontally */
+    align-items: center; /* Center align content vertically */
+        width: 50%; /* Set width to half of the section */
+        height: 100%; /* Make it cover the full height */
+        background-color: #106767;
+        /* Set background color to white */
+    }
+    .text-container{
+        display: flex;
+    flex-direction: column;
+    align-items: center; /* Align items horizontally at center */
+    text-align: center; /* Align text content at center */
+    }
+    .text-container h1 {
+        font-weight: bold; /* Make text bold */
+    }
+    .text-container h1 {
+        font-weight: bold; /* Make text bold */
+        margin: 0; /* Remove default margin */
+        font-size: 38px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .text-container h2 {
+        font-weight: bold; /* Make text bold */
+        margin-top: 5px;
+        font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px; /* Adjusted margin-bottom */
+    }
+    .text-container button {
+        width: 170px;
+        height: 40px;
+        background-color: black;
+        color: white;
+        font-size: 20px;
+        border: none;
+        border-radius: 10px;
+        margin-top: 22px;
+    }
+}
+#contact {
+  .section3 {
+      height: 800px; /* Set the height */
+      display: flex;
+      align-items: flex-end; /* Align items to bottom */
+      justify-content: flex-start; /* Align items to left */
+      position: relative;
+      width: 100%;
+      background-color: white;
+  }
+  
+  .right-half {
+      width: 50%; /* Set width to half of the section */
+      background-image: url('./digilocker.png'); /* Set background image */
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 100%; /* Make it cover the full height */
+  }
+  
+  .left-half {
+      width: 50%; /* Set width to half of the section */
+  height: 100%; /* Make it cover the full height */
+  background-color: white; /* Set background color to white */
+  display: flex;
+  justify-content: center; /* Center align content horizontally */
+  align-items: center; /* Center align content vertically */
+      width: 50%; /* Set width to half of the section */
+      height: 100%; /* Make it cover the full height */
+      background-color: white; /* Set background color to white */
+  }
+  .text-container{
+      display: flex;
+  flex-direction: column;
+  align-items: center; /* Align items horizontally at center */
+  text-align: center; /* Align text content at center */
+  }
+  .text-container h1 {
+      font-weight: bold; /* Make text bold */
+  }
+  .text-container h1 {
+      font-weight: bold; /* Make text bold */
+      margin: 0; /* Remove default margin */
+      font-size: 38px;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .text-container h2 {
+      font-weight: bold; /* Make text bold */
+      margin-top: 5px;
+      font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px; /* Adjusted margin-bottom */
+  }
+  .text-container button {
+      width: 170px;
+      height: 40px;
+      background-color: black;
+      color: white;
+      font-size: 20px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 22px;
+    }
+  
+  
+}
